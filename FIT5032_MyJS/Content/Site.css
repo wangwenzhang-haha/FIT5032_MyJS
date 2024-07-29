@@ -18,3 +18,9 @@ select,
 textarea {
     max-width: 280px;
 }
+
+#datepicker td, th {
+    text-align: center;
+    padding: 8px 12px;
+    font-size: 14px;
+}
