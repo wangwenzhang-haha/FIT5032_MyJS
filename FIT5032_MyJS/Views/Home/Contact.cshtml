@@ -17,7 +17,12 @@
         <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
     </address>
 
-    <input type="text" class="form-control" id="datepicker">
+    <div class="input-group date">
+        <input type="text" class="form-control" id="datepicker">
+        <div class="input-group-addon">
+            <span class="glyphicon glyphicon-th"></span>
+        </div>
+    </div>
 
     <script>
         $(document).ready(function () {
@@ -28,7 +33,7 @@
                 clearBtn: true,
                 todayHighlight: true,
                 defaultViewDate: { year: 2024, month: 7, day: 20 }
-            }).datepicker('update', new Date(2024, 7, 20));
+            }).datepicker('setDate', new Date(2024, 7, 20));
         });
     </script>
 </main>
